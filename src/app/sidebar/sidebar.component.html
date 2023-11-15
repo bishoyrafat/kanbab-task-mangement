@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <nav class="sidebar">
+    <div class="sidebar__total">ALL BOARDS (4)</div>
+    <ul>
+      <li
+        #link
+        class="sidebar__list"
+        [class.active]="clickedIndex === list.isActive"
+        *ngFor="let list of lists"
+        (click)="detectActive(list.isActive)"
+      >
+        <img src="../../assets/board.svg" alt="" /><a> {{ list.name }}</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="dark--mode">
+    <img src="../../assets/moon indicating dark mode.svg" alt="" />
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
+    <img src="../../assets/sun indicating light mode.svg" alt="" />
+  </div>
+</div>
