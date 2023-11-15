@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="header__logo"><img src="../../assets/logo.svg" />kanban</div>
+  <div>Platform Launch</div>
+  <div></div>
+  <div></div>
+  <div class="header__cta">
+    <button>+ Add New Task</button>
+    <img src="../../assets/menu for deleting or editing board.svg" alt="" (click)="toggleMenu()" />
+  </div>
+
+  <nav #menu class="header__toggle--menu " *ngIf="isOpend">
+  <ul>
+    <li>Edit board</li>
+    <hr>
+    <li>Delete board</li>
+  </ul>
+</nav>
+
+</header>
+
