@@ -2,8 +2,12 @@
 
 .container {
   display: flex;
+}
+.slidebar {
+  flex-basis: 22%;
+}
 
-  div {
-
-  }
+.todo {
+  flex: 1;
+  background-color: $color-blue-1;
 }
