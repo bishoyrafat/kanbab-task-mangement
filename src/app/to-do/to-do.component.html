@@ -1,0 +1,23 @@
+<div cdkDropListGroup class="wrapper">
+  <!-- <div class="example-container">
+    <h2>To do</h2>
+    <div
+      cdkDropList
+      [cdkDropListData]="todo"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      @for (item of todo; track item) {
+        <div class="example-box" cdkDrag>
+          <div>{{item}}</div>
+          <div class="subtask">1 of 3 subtasks</div>
+        </div>
+      }
+    </div>
+  </div> -->
+
+
+
+<app-drag-drop [todo]="todo" [subtask]="'1 of 3 subtasks '" [todoName]="'Todo'"></app-drag-drop>
+<app-drag-drop [todo]="doing" [subtask]="'1 of 3 subtasks '" [todoName]="'Doing'"></app-drag-drop>
+<app-drag-drop [todo]="done" [subtask]="'1 of 3 subtasks '" [todoName]="'Done'"></app-drag-drop>
+</div>

@@ -1,0 +1,15 @@
+<div class="example-container">
+  <h2>{{todoName}} ({{todo.length}})</h2>
+  <div
+    cdkDropList
+    [cdkDropListData]="todo"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    @for (item of todo; track item) {
+      <div class="example-box" cdkDrag>
+        <div class="task">{{item}}</div>
+        <div class="subtask">{{subtask}} </div>
+      </div>
+    }
+  </div>
+</div>
