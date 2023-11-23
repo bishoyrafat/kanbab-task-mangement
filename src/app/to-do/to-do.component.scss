@@ -1,9 +1,6 @@
 @import "../../styles/variables";
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1rem;
-  justify-content: center;
+
   padding: 3rem;
 }

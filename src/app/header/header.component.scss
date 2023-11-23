@@ -9,7 +9,8 @@
   background-color: $color-blue-2;
   color: $color-light-white;
   font-size: 2.1rem;
-  position: relative;
+  position: sticky;
+  top: 0;
 
   &__logo {
     display: flex;
