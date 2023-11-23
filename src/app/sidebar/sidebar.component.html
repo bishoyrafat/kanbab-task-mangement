@@ -1,13 +1,13 @@
 <div class="wrapper">
   <nav class="sidebar">
-    <div class="sidebar__total">ALL BOARDS (4)</div>
+    <div class="sidebar__total">ALL BOARDS ({{lists.length-1}})</div>
     <ul>
       <li
         #link
         class="sidebar__list"
         [class.active]="clickedIndex === list.isActive"
         *ngFor="let list of lists"
-        (click)="detectActive(list.isActive)"
+        (click)="detectActive(list.isActive,list.name)"
       >
         <img src="../../assets/board.svg" alt="" /><a> {{ list.name }}</a>
       </li>

@@ -1,0 +1,11 @@
+<div class="modal">
+  <div>
+    <h2>Add new board</h2>
+    <label for="input">Board Name </label>
+    <input id="input" type="text" placeholder="e.g. Web Design" [(ngModel)]="boardName" />
+  </div>
+  <div class="modal__btn">
+    <button class="modal__btn--light">+ Add New Column</button>
+    <button class="modal__btn--dark" (click)="createNewBoard()">Create New Board</button>
+  </div>
+</div>

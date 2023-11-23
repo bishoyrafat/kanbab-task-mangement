@@ -1,13 +1,20 @@
 @import "../../styles/variables";
 
 .container {
-  display: flex;
+  display: grid;
+
+  grid-template-columns: 23% auto;
+
+  background-color: $color-blue-1;
+
 }
 .slidebar {
   flex-basis: 22%;
+  height: calc(100vh - 81px);
+
 }
 
 .todo {
-  flex: 1;
-  background-color: $color-blue-1;
+  min-height: calc( 100vh - 81px);
+
 }

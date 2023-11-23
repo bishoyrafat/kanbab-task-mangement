@@ -3,10 +3,14 @@
 .wrapper {
   background-color: $color-blue-2;
   flex-basis: 20%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: fixed;
+  height: calc(100vh - 81px);
+  width: 23%;
+
 }
 
 .sidebar {
@@ -15,8 +19,8 @@
   color: $color-dark-white;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  margin-top: 2rem;
+  height: calc(100vh - 81px);
+
 
   &__total {
     padding-left: 2rem;
@@ -66,7 +70,7 @@
 
 .dark--mode {
   width: 90%;
-  margin: auto;
+  align-self: center;
   background-color: $color-blue-1;
   border-radius: 5px;
   display: flex;
@@ -79,7 +83,7 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 17%;
+  width: 40px;
   height: 2rem;
 }
 
@@ -124,7 +128,7 @@ input:focus + .slider {
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
-  transform: translateX(1.6rem);
+  transform: translateX(160%);
 }
 
 /* Rounded sliders */
